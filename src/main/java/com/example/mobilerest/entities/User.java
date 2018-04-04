@@ -22,8 +22,8 @@ public class User {
     @Size(min = 4, max = 30, message = "The username field must be between 4 and 30 characters.")
     private String username;
 
-    @NotEmpty(message = "The access token field must not be empty.")
-    @Size(min = 5, max = 50, message = "The access token field must be between 6 and 50 characters.")
+    @NotEmpty(message = "The password field must not be empty.")
+    @Size(min = 5, max = 150, message = "The password field must be between 5 and 50 characters.")
     private String password;
 
     private String email;
